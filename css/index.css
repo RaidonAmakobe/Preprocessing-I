@@ -136,3 +136,23 @@ body {
 }
 
 /* My Code */
+body {
+  padding-right: 27%;
+}
+.nav-bar {
+  display: grid;
+  border: 1px solid red;
+  justify-content: end;
+  grid-template-columns: 100px 100px 100px 100px;
+  padding: 2%;
+  width: 100%;
+}
+
+.nav{
+    display: flex;
+    border: 1px solid red;
+    justify-content: end;
+    flex-flow: row;
+    margin-right: 10%;
+    padding: 10%
+}

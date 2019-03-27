@@ -134,25 +134,45 @@ html,
 body {
   height: 100%;
 }
-
 /* My Code */
-body {
-  padding-right: 27%;
+/* Padding for tablet */
+@media only screen and (max-width: 800px) {
+  body {
+    padding-right: 20%;
+  }
 }
-.nav-bar {
-  display: grid;
-  border: 1px solid red;
-  justify-content: end;
-  grid-template-columns: 100px 100px 100px 100px;
-  padding: 2%;
-  width: 100%;
-}
-
-.nav{
-    display: flex;
+/* Padding for tablet */
+/* Nav for mobile */
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  .nav-bar {
+    display: none;
+  }
+  /* .nav-bar {
+    width: 100%;
+    display: grid;
     border: 1px solid red;
-    justify-content: end;
-    flex-flow: row;
-    margin-right: 10%;
-    padding: 10%
+    grid-template-rows: repeat(4, 6.25em);
+    align-items: center;
+    justify-items: center;
+  } */
+  .body-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .buttonclass {
+    padding: 5%;
+  }
 }
+/* Nav for mobile */
+/* Nav for Desktop */

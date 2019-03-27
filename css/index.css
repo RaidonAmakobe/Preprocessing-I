@@ -134,8 +134,7 @@ html,
 body {
   height: 100%;
 }
-/* lol */
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   body {
     padding: 0;
     margin: 0;
@@ -156,7 +155,7 @@ body {
   }
   footer {
     display: flex;
-    margin-top: 10%;
+    margin-top: 30%;
     justify-content: center;
   }
   button {
@@ -192,5 +191,22 @@ body {
   footer {
     display: flex;
     justify-content: center;
+    margin-top: 10%;
   }
 }
+/*.navbar {
+display: flex;
+justify-content: space-around;
+padding: 5%;
+} */
+/*.main-block {
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-items: center;
+}
+
+.upperpart {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	justify-items: center;
+} */

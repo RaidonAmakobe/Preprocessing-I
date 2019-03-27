@@ -57,45 +57,16 @@ table {
 html, body {
     height: 100%;
 }
+/* lol */
 
-/* My Code */
-
-/* Padding for tablet */
-
-@media only screen and (max-width: 800px) {
-  body {
-    padding-right: 20%;
-  }
-}
-
-/* Padding for tablet */
-
-
-/* Nav for mobile */
 @media only screen and (max-width: 600px) {
-
   body{
     padding: 0;
     margin: 0;
   }
-  .nav-bar {
-    display: none;
-  }
-  /* .nav-bar {
-    width: 100%;
-    display: grid;
-    border: 1px solid red;
-    grid-template-rows: repeat(4, 6.25em);
-    align-items: center;
-    justify-items: center;
-  } */
-
-  .body-section {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-
+	.navbar {
+		display: none;
+	}
   .main {
     display: flex;
     flex-direction: row;
@@ -103,8 +74,8 @@ html, body {
     align-items: center;
 		padding: 5%;
     }
-
-		.body-section {
+		.upperpart,
+		.lowerpart {
 			display: none;
 		}
 
@@ -118,15 +89,21 @@ html, body {
 			padding: 5%;
 			width: 100%;
 		}
+	}
+
+	@media only screen and (min-width: 600px) and (max-width: 960px){
+
+			.navbar {
+			display: flex;
+			justify-content: space-around;
+			padding: 8%;
+	}
+
+		.main-block{
+			display: flex;
+			align-items: center;
+			flex-direction: column;
 
 		}
-  }
-}
 
-/* Nav for mobile */
-
-/* Nav for Desktop */
-
-@media only screen and (max-width: 961px){
-
-}
+	}
